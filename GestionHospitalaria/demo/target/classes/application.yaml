@@ -6,7 +6,7 @@ spring:
     name: gestion-hospitalaria
   liquibase:
     enabled: false
-
+    
   datasource:
     url: ${SPRING_DATASOURCE_URL:jdbc:mysql://localhost:3306/db_gestionhospital?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true}
     username: ${SPRING_DATASOURCE_USERNAME:root}
