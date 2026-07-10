@@ -3,6 +3,7 @@
     <toRun name="DemoApplication " type="SpringBootApplicationConfigurationType" />
     <toRun name="DemoApplication - Especialidad" type="SpringBootApplicationConfigurationType" />
     <toRun name="DemoApplication - Medico" type="SpringBootApplicationConfigurationType" />
+    <toRun name="DemoApplication - Paciente" type="SpringBootApplicationConfigurationType" />
     <method v="2" />
   </configuration>
 </component>

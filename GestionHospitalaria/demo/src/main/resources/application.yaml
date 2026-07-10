@@ -85,3 +85,22 @@ spring:
             - Path=/api/medicos/**
 server:
   port: 8082
+
+# Pacientes
+---
+spring:
+  config:
+    activate:
+      on-profile: paciente
+  application:
+    name: paciente
+  cloud:
+    gateway:
+      routes:
+        - id: ruta-pacientes-gateway
+          uri: http://localhost:8083
+          predicates:
+            - Path=/pacientes/**
+
+server:
+  port: 8083
