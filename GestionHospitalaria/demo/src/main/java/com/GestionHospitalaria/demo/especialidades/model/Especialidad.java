@@ -17,7 +17,7 @@ public class Especialidad {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotBlank(message = "la especialidad no puede estar vacío")
+    @NotBlank(message = "la especialidad no puede estar vaciA")
     @Column(unique = true, nullable = false)
     private String descripcion;
 }

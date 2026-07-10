@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="ejecutar todo" type="CompoundRunConfigurationType">
+    <toRun name="DemoApplication " type="SpringBootApplicationConfigurationType" />
+    <toRun name="DemoApplication - Especialidad" type="SpringBootApplicationConfigurationType" />
+    <method v="2" />
+  </configuration>
+</component>
