@@ -3,6 +3,7 @@ package com.GestionHospitalaria.demo.especialidades.controller;
 import com.GestionHospitalaria.demo.especialidades.model.Especialidad;
 import com.GestionHospitalaria.demo.especialidades.service.EspecialidadService;
 import jakarta.validation.Valid;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -12,6 +13,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/especialidades")
+@Tag(name = "Gestión de especialidades", description = "Endpoints para el manejo de especialidades")
 public class EspecialidadController {
 
     @Autowired

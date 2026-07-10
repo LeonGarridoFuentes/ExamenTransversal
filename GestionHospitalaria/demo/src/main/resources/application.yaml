@@ -5,7 +5,6 @@
 server:
   port: 8080
 
-
 # -------------------------------------------------------------
 #  conexion con la base de datos local con liquibase MYsql
 # -------------------------------------------------------------
@@ -27,8 +26,6 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQLDialect
-
-
 
 # -------------------------------------------------------------
 #  coneccion con eureka (prender primero eureka antes que este proyecto)
@@ -53,17 +50,38 @@ springdoc:
   swagger-ui:
     path: /swagger-ui.html
 
-
-
 # -------------------------------------------------------------
 #  puertos de los microservicios
 # -------------------------------------------------------------
+
+#especialidad
+
 ---
 spring:
   config:
     activate:
       on-profile: especialidad
   application:
-    name: ms-especialidades
+    name: especialidades
 server:
   port: 8081
+
+#Medico
+
+---
+spring:
+  config:
+    activate:
+      on-profile: medico
+  application:
+    name: medico
+
+  cloud:
+    gateway:
+      routes:
+        - id: ruta-medicos-gateway
+          uri: http://localhost:8080
+          predicates:
+            - Path=/api/medicos/**
+server:
+  port: 8082
