@@ -1,8 +1,18 @@
-/target/
-.idea/
-*.class
-*.jar
-*.war
-.settings/
-.project
-.classpath
+# Default ignored files
+/shelf/
+/workspace.xml
+# Ignored default folder with query files
+/queries/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# Ignorar carpetas target
+**/target/
+
+# Ignorar todo en .idea, EXCEPTO las configuraciones de ejecución
+.idea/*
+!.idea/runConfigurations/
+!.idea/misc.xml
+!.idea/modules.xml
