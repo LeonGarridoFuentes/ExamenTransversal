@@ -8,14 +8,14 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("api/pacientes/")
+@RequestMapping("api/pacientes")
 @Tag(name = "Pacientes", description = "Gestión de pacientes")
 public class PacienteController {
 
     @Autowired
     private PacienteService service;
 
-    @GetMapping(value = {"", "/"}) // Acepta tanto /pacientes como /pacientes/
+    @GetMapping(value = {"", "/"})
     public List<Paciente> listar() {
         return service.listar();
     }

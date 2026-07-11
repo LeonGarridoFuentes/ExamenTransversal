@@ -7,18 +7,20 @@ import lombok.Data;
 @Data
 @Entity
 @Table(name = "pacientes")
-@JsonPropertyOrder({ "idPaciente", "nombres", "apellidos", "rut" })
+@JsonPropertyOrder({ "idPaciente", "nombre", "apellido", "rut" })
 public class Paciente {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_paciente")
     private Integer idPaciente;
 
-    @Column(nullable = false, length = 50)
-    private String nombres;
+    @Column(name = "nombre")
+    private String nombre;
 
-    @Column(nullable = false, length = 50)
-    private String apellidos;
+    @Column(name = "apellido")
+    private String apellido;
 
-    @Column(unique = true, length = 15)
+    @Column(name = "rut")
     private String rut;
 }

@@ -3,7 +3,6 @@
     <option name="ACTIVE_PROFILES" value="especialidad" />
     <option name="ALTERNATIVE_JRE_PATH" value="ms-21" />
     <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-    <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
     <module name="demo" />
     <option name="SPRING_BOOT_MAIN_CLASS" value="com.GestionHospitalaria.demo.DemoApplication" />
     <extension name="coverage">
