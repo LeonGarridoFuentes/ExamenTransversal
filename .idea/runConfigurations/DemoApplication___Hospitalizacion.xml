@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="DemoApplication - Hospitalizacion" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <option name="ACTIVE_PROFILES" value="hospitalizacion" />
+    <module name="demo" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.GestionHospitalaria.demo.DemoApplication" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
