@@ -1,0 +1,24 @@
+# Ignorar carpetas de compilación y temporales
+**/target/
+**/bin/
+**/.settings/
+*.class
+*.jar
+*.war
+*.log
+*.tmp
+
+# Ignorar todo el contenido de .idea, PERO permitir los archivos clave
+.idea/*
+
+# Excepciones: Permitir archivos de configuración del proyecto
+!.idea/runConfigurations/
+!.idea/misc.xml
+!.idea/modules.xml
+!.idea/compiler.xml
+!.idea/vcs.xml
+
+# Ignorar archivos temporales específicos de IntelliJ que causan conflictos
+.idea/workspace.xml
+.idea/shelf/
+.idea/libraries/
